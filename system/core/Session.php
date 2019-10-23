@@ -38,12 +38,12 @@ class Session extends \SessionHandler
                 __CLASS__
             ));
         }
-        if (! extension_loaded('mbstring')) {
-            throw new \RuntimeException(sprintf(
-                "You need the Multibytes extension to use %s",
-                __CLASS__
-            ));
-        }
+//        if (! extension_loaded('mbstring')) {
+//            throw new \RuntimeException(sprintf(
+//                "You need the Multibytes extension to use %s",
+//                __CLASS__
+//            ));
+//        }
 
         ini_set('session.use_cookies', 1);
         ini_set('session.use_only_cookies', 1);

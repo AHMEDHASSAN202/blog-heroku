@@ -101,15 +101,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categoriesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/Controllers/Admin/categories/categoriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="categoriesModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/Models/categoriesModel.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,11 +110,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
               <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/core/Session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -188,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system/core/Validation.php" />
         <option value="$PROJECT_DIR$/application/Views/Errors/404_page.php" />
         <option value="$PROJECT_DIR$/application/Models/usersGroupsModel.php" />
         <option value="$PROJECT_DIR$/application/Views/Admin/categories/categoriesView.php" />
@@ -239,6 +238,7 @@
         <option value="$PROJECT_DIR$/application/Controllers/Admin/users_groups/rolesController.php" />
         <option value="$PROJECT_DIR$/system/core/routes/BasicRoutes_rs.php" />
         <option value="$PROJECT_DIR$/system/config.php" />
+        <option value="$PROJECT_DIR$/system/core/Session.php" />
       </list>
     </option>
   </component>
@@ -309,7 +309,7 @@
               <item name="blog-heroku" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-heroku" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -476,12 +476,12 @@
       <workItem from="1547998026370" duration="1170000" />
       <workItem from="1558569928142" duration="5319000" />
       <workItem from="1571778815678" duration="3377000" />
-      <workItem from="1571865826726" duration="1094000" />
+      <workItem from="1571865826726" duration="1405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="653371000" />
+    <option name="totallyTimeSpent" value="653682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="754" extended-state="6" />
@@ -808,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/core/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
@@ -903,6 +896,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
         </state>
       </provider>
     </entry>

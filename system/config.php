@@ -11,7 +11,7 @@ return [
         'username'  => 'root',
         'password'  => ''
     ],
-    'autoload_helpers_files' => ['CommonFunctions', 'Encryption'],       //autoload helpers [write file without prefix]
+    'autoload_helpers_files' => ['CommonFunctions', 'encryption'],       //autoload helpers [write file without prefix]
     'routes'    => [    //routes files without .php  [prefix is _rs]
         CORE_PATH . DS . 'routes' . DS . 'BasicRoutes',    //basic routes
     ],

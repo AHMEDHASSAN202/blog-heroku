@@ -129,7 +129,7 @@ class Session extends \SessionHandler
         $ciphertext = openssl_encrypt(
             $data,
             'AES-256-CBC',
-            mb_substr($key, 0, 32, '8bit'),
+            substr($key, 0, 32),
             OPENSSL_RAW_DATA,
             $iv
         );
@@ -137,7 +137,7 @@ class Session extends \SessionHandler
         $hmac = hash_hmac(
             'SHA256',
             $iv . $ciphertext,
-            mb_substr($key, 32, null, '8bit'),
+            substr($key, 0, 32),
             true
         );
         return $hmac . $iv . $ciphertext;
@@ -152,14 +152,14 @@ class Session extends \SessionHandler
      */
     private function decrypt($data, $key)
     {
-        $hmac       = mb_substr($data, 0, 32, '8bit');
-        $iv         = mb_substr($data, 32, 16, '8bit');
-        $ciphertext = mb_substr($data, 48, null, '8bit');
+        $hmac       = substr($key, 0, 32);
+        $iv         = substr($key, 0, 32);
+        $ciphertext = substr($key, 0, 32);
         // Authentication
         $hmacNew = hash_hmac(
             'SHA256',
             $iv . $ciphertext,
-            mb_substr($key, 32, null, '8bit'),
+            substr($key, 0, 32),
             true
         );
         if (! hash_equals($hmac, $hmacNew)) {
